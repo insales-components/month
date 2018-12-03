@@ -1,0 +1,12 @@
+{
+  "name": "Month",
+  "version": "1.0.0",
+  "description": "Русское название месяца в liquid",
+  "author": "LiquidHub.ru",
+  "type": "snippets",
+  "homepage": "https://github.com/insales-components/month",
+  "props": {
+    "liquid": true
+  },
+  "dependencies": {}
+}
