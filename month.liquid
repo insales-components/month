@@ -1,0 +1,12 @@
+{% comment %}
+  {{ article.created_at | date: "%d" }} {% include "month" , created: article.created_at %}
+{% endcomment %}
+
+{% assign monthday = created | date: "%m" | minus: 1%}
+{% assign listmonths = 'января,февраля,марта,апреля,мая,июня,июля,августа,сентября,октября,ноября,декабря' | split: ',' %}
+
+{{ listmonths[monthday] }}
+
+{% assign created = nil %}
+{% assign monthday = nil %}
+{% assign listmonths = nil %}
